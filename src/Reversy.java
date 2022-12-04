@@ -44,12 +44,16 @@ public class Reversy {
             switch (option) {
                 case 1:
                     againstEasyComputer();
+                    break;
                 case 2:
                     againstHardComputer();
+                    break;
                 case 3:
                     againstHuman();
+                    break;
                 case 4:
                     printScore();
+                    break;
             }
             option = menu();
         }
@@ -66,11 +70,15 @@ public class Reversy {
             if (turn == 1) {
                 if (!gf.firstStepsExist()) {
                     System.out.println("Crosses don't have steps");
+                    turn = 3 - turn;
+                    continue;
                 }
                 chs = player1.chooseCell(gf);
             } else {
                 if (!gf.secondStepsExist()) {
                     System.out.println("Circles don't have steps");
+                    turn = 3 - turn;
+                    continue;
                 }
                 chs = player2.chooseCell(gf);
             }
@@ -98,11 +106,15 @@ public class Reversy {
             if (turn == 1) {
                 if (!gf.firstStepsExist()) {
                     System.out.println("Crosses don't have steps");
+                    turn = 3 - turn;
+                    continue;
                 }
                 chs = player1.chooseCell(gf);
             } else {
                 if (!gf.secondStepsExist()) {
                     System.out.println("Circles don't have steps");
+                    turn = 3 - turn;
+                    continue;
                 }
                 chs = player2.chooseCell(gf);
             }
@@ -130,11 +142,15 @@ public class Reversy {
             if (turn == 1) {
                 if (!gf.firstStepsExist()) {
                     System.out.println("Crosses don't have steps");
+                    turn = 3 - turn;
+                    continue;
                 }
                 chs = player1.chooseCell(gf);
             } else {
                 if (!gf.secondStepsExist()) {
                     System.out.println("Circles don't have steps");
+                    turn = 3 - turn;
+                    continue;
                 }
                 chs = player2.chooseCell(gf);
             }
